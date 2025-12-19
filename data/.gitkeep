@@ -1,0 +1,11 @@
+fraud-detection/
+│
+├── data/
+│   └── creditcard.csv   (later)
+│
+├── notebooks/
+│   └── fraud_detection.ipynb
+│
+├── README.md
+│
+└── requirements.txt
