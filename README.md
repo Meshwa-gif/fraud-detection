@@ -5,14 +5,14 @@ It demonstrates an **end-to-end data science workflow**, including data validati
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Financial fraud detection is a highly imbalanced classification problem where fraudulent transactions represent a very small fraction of total activity.  
 The objective of this project is to build and evaluate models that can **accurately identify fraudulent transactions while balancing false positives and false negatives**, a critical trade-off in real-world fraud systems.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Source:** Credit Card Fraud Dataset (Kaggle)  
 - **Observations:** 284,807 transactions  
@@ -23,7 +23,7 @@ The objective of this project is to build and evaluate models that can **accurat
 
 ---
 
-## 🧹 Data Preparation & Validation
+## Data Preparation & Validation
 
 - Verified dataset integrity (no missing values)
 - Examined feature distributions and class imbalance
@@ -32,7 +32,7 @@ The objective of this project is to build and evaluate models that can **accurat
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 Key insights from EDA:
 - Fraudulent transactions account for **less than 1%** of all observations
@@ -41,28 +41,28 @@ Key insights from EDA:
 
 ---
 
-## 🤖 Modeling Approach
+## Modeling Approach
 
 Three models were trained and evaluated:
 
-### 1️⃣ Logistic Regression (Baseline)
+### Logistic Regression (Baseline)
 - Interpretable linear model
 - High precision but moderate recall
 - Serves as a baseline reference
 
-### 2️⃣ Logistic Regression (Class-Weighted)
+### Logistic Regression (Class-Weighted)
 - Applied `class_weight="balanced"`
 - Significantly improved recall
 - Introduced a high number of false positives
 
-### 3️⃣ Random Forest (Final Model)
+### Random Forest (Final Model)
 - Captures non-linear patterns
 - Achieved the **best balance between precision and recall**
 - Strong overall performance across metrics
 
 ---
 
-## 📈 Model Performance Summary
+##  Model Performance Summary
 
 | Model | Precision (Fraud) | Recall (Fraud) | F1-score | ROC AUC |
 |-----|------------------|---------------|---------|---------|
@@ -72,7 +72,7 @@ Three models were trained and evaluated:
 
 ---
 
-## 🏆 Final Model Selection
+##  Final Model Selection
 
 **Random Forest** was selected as the final model because it:
 - Captures most fraudulent cases
@@ -82,7 +82,7 @@ Three models were trained and evaluated:
 
 ---
 
-## 🔍 Feature Importance & Interpretability
+## Feature Importance & Interpretability
 
 Feature importance analysis was performed using:
 - Built-in Random Forest feature importance
@@ -94,7 +94,7 @@ Top contributing features (e.g., `V14`, `V10`, `V17`) consistently ranked highly
 
 ---
 
-## ⚠️ Model Limitations & Bias
+## Model Limitations & Bias
 
 - Severe class imbalance can bias predictions toward non-fraud cases
 - False positives may incur operational review costs
@@ -105,7 +105,7 @@ These limitations highlight the importance of **human-in-the-loop validation** i
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 1. Clone this repository
 2. Download the Credit Card Fraud Dataset from Kaggle
