@@ -55,14 +55,3 @@ Fraud class (Class = 1) performance on the test set:
 - Random Forest provides the best balance between precision and recall for practical fraud detection.
 
 ---
-
-## How to Run
-
-### Option A (Matches the notebook): KaggleHub download
-1. Install dependencies
-2. Ensure Kaggle access is configured for KaggleHub (Kaggle credentials/environment)
-3. Run the notebook
-
-```bash
-pip install -r requirements.txt
-jupyter notebook
